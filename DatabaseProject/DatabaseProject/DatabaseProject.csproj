@@ -75,7 +75,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Models\App.config" />
     <None Include="Data\branches.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

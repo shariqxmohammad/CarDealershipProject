@@ -1,4 +1,5 @@
 ﻿using DatabaseProject.Models;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -135,6 +136,37 @@ namespace DatabaseProject
                             };
 
             return customers;
+        }
+
+        //Complex Query #3 and #4 - Combining HAVING and GroupBy
+        public void BranchesByStateAndCount()
+        {
+            var collection = GetCollection<DealershipBranch>();
+            var aggregate = collection.Aggregate().Group(new BsonDocument { { "_id", "$Address.State" }, { "count", new BsonDocument("$sum", 1) } });
+            var results = aggregate.ToList();
+            foreach(var doc in results)
+            {
+                Console.WriteLine("State: {0} :: Count: {1}", doc["_id"], doc["count"]);
+            }
+        }
+
+        //Complex Query #5 - Subquery - Select all customers that live in Texas from the selected list of all customers who were served by Faith Mandela.
+        public void CustomersInTexasServedByFaith()
+        {
+            var faithMandelaId = new Guid("eec53a1f-2f33-4908-968c-33c93c351179");
+
+            var salesCollection = GetCollection<Salesperson>();
+            var customerCollection = GetCollection<Customer>();
+
+            var allSalesPeople = salesCollection.Find(FilterDefinition<Salesperson>.Empty).ToList();
+            var allCustomers = customerCollection.Find(FilterDefinition<Customer>.Empty).ToList();
+
+            var customers = from c in (from z in allCustomers
+                                       where z.ServedBy == faithMandelaId
+                                       select z)
+                            where c.Address.State == "TX"
+                            select c;
+           
         }
     }
 }
