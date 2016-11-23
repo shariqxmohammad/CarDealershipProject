@@ -61,7 +61,7 @@
   <ItemGroup>
     <Compile Include="MockDataFactory.cs" />
     <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\Branch.cs" />
+    <Compile Include="Models\DealershipBranch.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Motorcycle.cs" />

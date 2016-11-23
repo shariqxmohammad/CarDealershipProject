@@ -1,14 +1,14 @@
 ﻿[
   {
-    "biketype": "Conventional"
+    "biketype": "Conventional",
+    "vin": "3VWST71K56M814298"
   },
   {
-    "biketype": "Sport"
+    "biketype": "Sport",
+    "vin": "WAUGE08B2LA082492"
   },
   {
-    "biketype": "Dirt"
-  },
-  {
-    "biketype": "Scooter"
+    "biketype": "Dirt",
+    "vin": "LFVBA24B543063220"
   }
 ]

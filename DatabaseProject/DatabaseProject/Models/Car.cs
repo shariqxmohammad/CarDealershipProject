@@ -1,6 +1,6 @@
 ﻿namespace DatabaseProject.Models
 {
-    public class Car : Vehicle
+    public class Car
     {
         public string EngineSize { get; set; }
     }

@@ -1,5 +1,4 @@
 ﻿using DatabaseProject.Models;
-using MongoDB.Driver;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -9,16 +8,18 @@ namespace DatabaseProject
 {
     public class MockDataFactory
     {
-        private readonly IMongoDatabase _database;
+        private readonly MongoDataClient _dataClient;
 
-        public MockDataFactory()
+        public MockDataFactory(MongoDataClient dataClient)
         {
-            _database = MongoDataClient.GetDealershipDatabase();
+            if (dataClient == null) throw new ArgumentNullException(nameof(dataClient));
+
+            _dataClient = dataClient;
         }
 
         public void AddVehicles()
         {
-            var collection = GetCollection<Vehicle>();
+            var collection = _dataClient.GetCollection<Vehicle>();
             var vehicles = Deserialize<Vehicle>("vehicles.json");
 
             collection.InsertMany(vehicles);
@@ -26,7 +27,7 @@ namespace DatabaseProject
 
         public void AddMotorcycles()
         {
-            var collection = GetCollection<Motorcycle>();
+            var collection = _dataClient.GetCollection<Motorcycle>();
             var motorcycles = Deserialize<Motorcycle>("motorcycles.json");
 
             collection.InsertMany(motorcycles);
@@ -34,7 +35,7 @@ namespace DatabaseProject
 
         public void AddCars()
         {
-            var collection = GetCollection<Car>();
+            var collection = _dataClient.GetCollection<Car>();
             var cars = Deserialize<Car>("cars.json");
 
             collection.InsertMany(cars);
@@ -42,7 +43,7 @@ namespace DatabaseProject
 
         public void AddSuvs()
         {
-            var collection = GetCollection<Suv>();
+            var collection = _dataClient.GetCollection<Suv>();
             var suvs = Deserialize<Suv>("suvs.json");
 
             collection.InsertMany(suvs);
@@ -50,7 +51,7 @@ namespace DatabaseProject
 
         public void AddTrucks()
         {
-            var collection = GetCollection<Truck>();
+            var collection = _dataClient.GetCollection<Truck>();
             var trucks = Deserialize<Truck>("trucks.json");
 
             collection.InsertMany(trucks);
@@ -58,7 +59,7 @@ namespace DatabaseProject
 
         public void AddCustomers()
         {
-            var collection = GetCollection<Customer>();
+            var collection = _dataClient.GetCollection<Customer>();
             var customers = Deserialize<Customer>("customers.json");
 
             collection.InsertMany(customers);
@@ -66,7 +67,7 @@ namespace DatabaseProject
 
         public void AddSalesPeople()
         {
-            var collection = GetCollection<Salesperson>();
+            var collection = _dataClient.GetCollection<Salesperson>();
             var salespeople = Deserialize<Salesperson>("salespeople.json");
 
             collection.InsertMany(salespeople);
@@ -74,8 +75,8 @@ namespace DatabaseProject
 
         public void AddDealerships()
         {
-            var collection = GetCollection<Branch>();
-            var dealerships = Deserialize<Branch>("branches.json");
+            var collection = _dataClient.GetCollection<DealershipBranch>();
+            var dealerships = Deserialize<DealershipBranch>("branches.json");
 
             collection.InsertMany(dealerships);
         }
@@ -94,18 +95,12 @@ namespace DatabaseProject
                 AddSalesPeople();
                 AddDealerships();
 
-                Console.WriteLine("Successfully added all the mock data");
+                Console.WriteLine("Successfully added all the mock data.");
             }
             catch (Exception e)
             {
                 Console.WriteLine("Failed to add mock data:: {0}", e);
             }
-        }
-
-        private IMongoCollection<T> GetCollection<T>()
-        {
-            var collectionName = typeof(T).Name;
-            return _database.GetCollection<T>(collectionName);
         }
 
         private IEnumerable<T> Deserialize<T>(string jsonFileName)
@@ -119,9 +114,9 @@ namespace DatabaseProject
             {
                 rvalue = JsonConvert.DeserializeObject<IEnumerable<T>>(File.ReadAllText(filePath));
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                Console.WriteLine("Failed to deserialize object of type {0}", nameof(T));
+                Console.WriteLine("Failed to deserialize object of type {0}.", nameof(T));
             }
 
             return rvalue;

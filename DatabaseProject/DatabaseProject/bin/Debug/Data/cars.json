@@ -1,11 +1,14 @@
 ﻿[
   {
-    "enginesize": "4-Cylinder"
+    "enginesize": "4-Cylinder",
+    "vin":  "CXJ6NVEQ28B5ZWVGB"
   },
   {
-    "enginesize": "6-Cylinder"
+    "enginesize": "6-Cylinder",
+    "vin":  "WG15WB0H5XVS5OD35"
   },
   {
-    "enginesize": "8-Cylinder"
+    "enginesize": "8-Cylinder",
+    "vin": "K545NKY0EDWNI4I9F"
   }
 ]

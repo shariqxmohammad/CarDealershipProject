@@ -1,8 +1,13 @@
-﻿namespace DatabaseProject.Models
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
+
+namespace DatabaseProject.Models
 {
     public class Vehicle
     {
+        [BsonId]
         public string Vin { get; set; }
+
         public string Year { get; set; }
         public string Condition { get; set; }
         public FuelType FuelType { get; set; }

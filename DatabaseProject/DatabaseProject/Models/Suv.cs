@@ -1,6 +1,6 @@
 ﻿namespace DatabaseProject.Models
 {
-    public class Suv : Vehicle
+    public class Suv
     {
         public int NumberSeats { get; set; }
     }

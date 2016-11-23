@@ -23,14 +23,6 @@ F:\Visual Studio 2015\Shazim\DatabaseProject\DatabaseProject\bin\Debug\Data\vehi
 F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe.config
 F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.exe
 F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.pdb
-F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\branches.json
-F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\cars.json
-F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\customers.json
-F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\motorcycles.json
-F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\salespeople.json
-F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\suvs.json
-F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\trucks.json
-F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\vehicles.json
 F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe
 F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.pdb
 F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\MongoDB.Bson.dll
@@ -42,3 +34,11 @@ F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabasePro
 F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\MongoDB.Driver.Core.xml
 F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Newtonsoft.Json.xml
 F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.csprojResolveAssemblyReference.cache
+F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\branches.json
+F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\cars.json
+F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\customers.json
+F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\motorcycles.json
+F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\salespeople.json
+F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\suvs.json
+F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\trucks.json
+F:\Visual Studio 2015\DealershipDatabase\faithnelson\DatabaseProject\DatabaseProject\bin\Debug\Data\vehicles.json

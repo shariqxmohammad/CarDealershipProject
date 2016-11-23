@@ -2,7 +2,7 @@
 
 namespace DatabaseProject.Models
 {
-    public class Branch
+    public class DealershipBranch
     {
         public string Phone { get; set; }
         public Address Address { get; set; }

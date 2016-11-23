@@ -1,21 +1,17 @@
 ﻿[
   {
-    "numberseats": 4
+    "numberseats": 4,
+    "vin": "1G6DJ577580113486"
   },
 
   {
-    "numberseats": 6
-  },
-
-    {
-    "numberseats": 7
+    "numberseats": 6,
+    "vin": "1FTNW21F7XEE36781"
   },
 
   {
-    "numberseats": 8
-  },
-
-  {
-    "numberseats": 10
+    "numberseats": 8,
+    "vin": "WBACB1325RFD24260"
   }
+
 ]

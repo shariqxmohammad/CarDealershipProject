@@ -1,26 +1,16 @@
 ﻿[
   {
-    "tonnage": "Class 1"
+    "tonnage": "Class 1",
+     "vin": "KM8SC73D15U909271"
   },
+
   {
-    "tonnage": "Class 2"
+    "tonnage": "Class 2",
+    "vin":  "1N6AA0CJ4BN350658"
   },
+
   {
-    "tonnage": "Class 3"
-  },
-    {
-    "tonnage": "Class 4"
-  },
-  {
-    "tonnage": "Class 5"
-  },
-    {
-    "tonnage": "Class 6"
-  },
-  {
-    "tonnage": "Class 7"
-  },
-    {
-    "tonnage": "Class 8"
-  }
+    "tonnage": "Class 3",
+    "vin":  "1M2AG03C42M005120"
+  }  
 ]

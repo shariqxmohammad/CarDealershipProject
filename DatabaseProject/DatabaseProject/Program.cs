@@ -5,29 +5,60 @@ namespace DatabaseProject
 {
     class Program
     {
+        private static MongoDataClient _dataClient = new MongoDataClient();
+
         static void Main(string[] args)
         {
-            WriteIntroductoryText();
+            _dataClient.LeftJoinSalesPeopleWhereSomeDoNotHaveCustomers();
+            //WriteIntroductoryText();
 
-            Console.WriteLine("Do you want to add the mock data?\n(y/n)");
-            var input = Console.ReadLine();
+            //Console.WriteLine("Do you want to add the mock data?\n(y/n)");
+            //var mockDataInput = Console.ReadLine();
 
+            //var validMockDataInput = GetValidInput(mockDataInput);
+
+            //if (InputIsYes(validMockDataInput))
+            //{
+            //    Console.WriteLine("Adding the data...");
+            //    var dataFactory = new MockDataFactory(_dataClient);
+            //    dataFactory.AddEverything();
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not adding the data. Do you want to query your data?\n(y/n)");
+            //    var queryInput = Console.ReadLine();
+            //    var validQueryInput = GetValidInput(queryInput);
+            //    if (InputIsYes(validQueryInput))
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Yellow;
+            //        var allVehicles = _dataClient.GetAllVehicles();
+            //        Console.WriteLine("\nGot all vehicles::");
+            //        foreach (var v in allVehicles)
+            //        {
+            //            Console.WriteLine("Vin: {0}\nYear: {1}\nCondition: {2}\nFuelType: {3}\n"
+            //                + "Transmission: {4}\nHorsepower: {5}\nColor: {6}\nPrice: {7}\nMiles: {8}\nModel: {9}\n",
+            //                v.Vin, v.Year, v.Condition, v.FuelType, v.Transmission, v.Horsepower,
+            //                v.Color, v.Price, v.Miles, v.Model);
+
+            //            Console.WriteLine("--------");
+            //        }
+            //        Console.ForegroundColor = ConsoleColor.Gray;
+
+            //    }
+            //}
+
+            Console.ReadLine();
+        }
+
+        private static string GetValidInput(string input)
+        {
             while (!IsValid(input))
             {
                 Console.WriteLine("(y/n)");
                 input = Console.ReadLine();
             }
 
-            if (ShouldAddMockData(input))
-            {
-                Console.WriteLine("Adding the data...");
-                var dataFactory = new MockDataFactory();
-                dataFactory.AddEverything();
-            }
-            else
-                Console.WriteLine("Not adding the data.");
-
-            Console.ReadLine();
+            return input;
         }
 
         private static bool IsValid(string input)
@@ -42,7 +73,7 @@ namespace DatabaseProject
                 return false;
         }
 
-        private static bool ShouldAddMockData(string input)
+        private static bool InputIsYes(string input)
         {
             var addRegex = "(^[yY]$|^[yY][eE][sS]$)";
             var notAddRegex = "(^[nN]$|^[nN][oO]$)";
