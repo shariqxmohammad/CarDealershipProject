@@ -1,0 +1,51 @@
+﻿[
+  {
+    "vin": "CXJ6NVEQ28B5ZWVGB",
+    "year": "1996",
+    "condition": "bad",
+    "fueltype": "standard",
+    "transmission": "stick",
+    "horsepower": "150",
+    "color": "blue",
+    "price": 3000,
+    "miles": "150000",
+    "model": "Honda"
+  },
+  {
+    "vin": "WG15WB0H5XVS5OD35",
+    "year": "2000",
+    "condition": "bad",
+    "fueltype": "standard",
+    "transmission": "stick",
+    "horsepower": "150",
+    "color": "blue",
+    "price": 3000,
+    "miles": "150000",
+    "model": "Honda"
+  },
+  {
+    "vin": "K545NKY0EDWNI4I9F",
+    "year": "1996",
+    "condition": "bad",
+    "fueltype": "standard",
+    "transmission": "stick",
+    "horsepower": "150",
+    "color": "blue",
+    "price": 3000,
+    "miles": "150000",
+    "model": "Honda"
+  },
+  "v",
+  {
+    "vin": "2WT27PFTPAG2N1G43",
+    "year": "1996",
+    "condition": "bad",
+    "fueltype": "standard",
+    "transmission": "automatic",
+    "horsepower": "150",
+    "color": "blue",
+    "price": 3000,
+    "miles": "150000",
+    "model": "Honda"
+  }
+]
