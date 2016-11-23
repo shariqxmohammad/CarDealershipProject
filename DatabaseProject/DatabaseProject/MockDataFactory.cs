@@ -1,7 +1,9 @@
 ﻿using DatabaseProject.Models;
 using MongoDB.Driver;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace DatabaseProject
 {
@@ -80,15 +82,24 @@ namespace DatabaseProject
 
         public void AddEverything()
         {
-            AddVehicles();
-            AddMotorcycles();
-            AddCars();
-            AddSuvs();
-            AddTrucks();
+            try
+            {
+                AddVehicles();
+                AddMotorcycles();
+                AddCars();
+                AddSuvs();
+                AddTrucks();
 
-            AddCustomers();
-            AddSalesPeople();
-            AddDealerships();
+                AddCustomers();
+                AddSalesPeople();
+                AddDealerships();
+
+                Console.WriteLine("Successfully added all the mock data");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Failed to add mock data:: {0}", e);
+            }
         }
 
         private IMongoCollection<T> GetCollection<T>()
@@ -99,7 +110,21 @@ namespace DatabaseProject
 
         private IEnumerable<T> Deserialize<T>(string jsonFileName)
         {
-           return JsonConvert.DeserializeObject<IEnumerable<T>>(jsonFileName);
+            var dataDirectory = "./Data/";
+            var filePath = dataDirectory + jsonFileName;
+
+            IEnumerable<T> rvalue = null;
+
+            try
+            {
+                rvalue = JsonConvert.DeserializeObject<IEnumerable<T>>(File.ReadAllText(filePath));
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Failed to deserialize object of type {0}", nameof(T));
+            }
+
+            return rvalue;
         }
     }
 }

@@ -1,0 +1,26 @@
+﻿[
+  {
+    "ssn": "111-23-9999",
+    "name": {
+      "first": "Branch",
+      "last": "Warren"
+    },
+    "address": {
+      "street": "123 Shady Lane",
+      "city": "Dallas",
+      "state": "TX"
+    }
+  },
+  {
+    "ssn": "111-23-9998",
+    "name": {
+      "first": "Branch",
+      "last": "Warren Jr"
+    },
+    "address": {
+      "street": "124 Shady Lane",
+      "city": "Dallas",
+      "state": "TX"
+    }
+  }
+]
