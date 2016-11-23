@@ -1,14 +1,14 @@
 ﻿[
   {
-    "biketype": "lowrider"
+    "biketype": "Conventional"
   },
   {
-    "biketype": "highrider"
+    "biketype": "Sport"
   },
   {
-    "biketype": "bicycle"
+    "biketype": "Dirt"
   },
   {
-    "biketype": "BranchWarrenshorse"
+    "biketype": "Scooter"
   }
 ]

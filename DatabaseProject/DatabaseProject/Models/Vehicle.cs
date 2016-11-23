@@ -16,8 +16,8 @@
 
     public enum FuelType
     {
-        Standard,
-        Diesel
+        Unleaded,
+        Premium
     }
 
     public enum Transmission

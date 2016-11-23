@@ -6,21 +6,143 @@
       "last": "Warren"
     },
     "address": {
-      "street": "123 Shady Lane",
-      "city": "Dallas",
+      "street": "123 Metroflex Lane",
+      "city": "Plano",
       "state": "TX"
     }
   },
+
   {
-    "ssn": "111-23-9998",
+    "ssn": "213-10-5763",
     "name": {
-      "first": "Branch",
-      "last": "Warren Jr"
+      "first": "Wilbert",
+      "last": "McKinzie"
     },
     "address": {
-      "street": "124 Shady Lane",
-      "city": "Dallas",
+      "street": "300 Nob Hill",
+      "city": "Allen",
       "state": "TX"
     }
+  },
+
+  {
+    "ssn": "504-60-8106",
+    "name": {
+      "first": "Nathan",
+      "last": "Perkins"
+    },
+
+    "address": {
+      "street": "322 Biscuit Avenue",
+      "city": "Pillsbury",
+      "state": "MN"
+    }
+  },
+
+  {
+    "ssn": "476-01-6466",
+    "name": {
+      "first": "Barack",
+      "last": "Obama"
+    },
+    "address": {
+      "street": "1600 Pennsylvania Ave NW",
+      "city": "Washington",
+      "state": "DC"
+    }
+  },
+
+    {
+    "ssn": "648-44-9425",
+    "name": {
+      "first": "Conor",
+      "last": "McGregor"
+    },
+    "address": {
+      "street": "3252 Mountain Ln.",
+      "city": "Denver",
+      "state": "CO"
+    }
+  },
+
+      {
+    "ssn": "287-30-2403",
+    "name": {
+      "first": "Nate",
+      "last": "Diaz"
+    },
+    "address": {
+      "street": "209 Hustle St.",
+      "city": "Stockton",
+      "state": "CA"
+    }
+  },
+
+        {
+    "ssn": "427-88-8630",
+    "name": {
+      "first": "Thelma",
+      "last": "Nelson"
+    },
+    "address": {
+      "street": "544 Jail Rd.",
+      "city": "Huntsville",
+      "state": "TX"
+    }
+  },
+
+
+          {
+    "ssn": "476-01-6466",
+    "name": {
+      "first": "Barack",
+      "last": "Obama"
+    },
+    "address": {
+      "street": "1600 Pennsylvania Ave NW",
+      "city": "Washington",
+      "state": "DC"
+    }
+  },
+
+  {
+    "ssn": "143-80-1042",
+    "name": {
+      "first": "Leonardo",
+      "last": "DiCaprio"
+    },
+    "address": {
+      "street": "5143 Potato Ln.",
+      "city": "Potato Village",
+      "state": "ID"
+    }
+  },
+
+
+  {
+    "ssn": "506-62-1304",
+    "name": {
+      "first": "Sponge",
+      "last": "Bob"
+    },
+    "address": {
+      "street": "1 Pineapple Ave",
+      "city": "Bikinni Bottom",
+      "state": "FL"
+    }
+  },
+
+    {
+    "ssn": "765-66-8664",
+    "name": {
+      "first": "Brian",
+      "last": "Parks"
+    },
+    "address": {
+      "street": "31 Canyon Ct.",
+      "city": "Flagstaff",
+      "state": "AZ"
+    }
   }
+
 ]

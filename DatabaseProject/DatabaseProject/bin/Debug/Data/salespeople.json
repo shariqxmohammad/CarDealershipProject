@@ -3,14 +3,96 @@
     "id": "eec53a1f-2f33-4908-968c-33c93c351179",
     "name": {
       "first": "Faith",
-      "last": "Nelson Mandela"
+      "last": "Mandela"
     }
   },
+
   {
     "id": "e8ab383e-9c89-461e-aad6-7c103f5f6b12",
     "name": {
       "first": "Mahatma",
       "last": "Ghandi"
     }
+  },
+
+  {
+    "id": "9f806c30-b5da-4b38-933c-b05957855a03",
+    "name": {
+      "first": "Donald",
+      "last": "Trump"
+    }
+  },
+
+  {
+    "id": "9c058bb1-7e7d-4aa3-ad2c-2a39f52065fa",
+    "name": {
+      "first": "Hillary",
+      "last": "Clinton"
+    }
+  },
+
+  {
+    "id": "8c564b07-0e35-48d2-8d2e-9b31c71da8c4",
+    "name": {
+      "first": "Joe",
+      "last": "Biden"
+    }
+  },
+
+  {
+    "id": "a3b15876-0567-48cc-81e1-302f2298725a",
+    "name": {
+      "first": "Ricky",
+      "last": "Bobby"
+    }
+  },
+
+  {
+    "id": "c8810631-c300-40a3-85ea-5227d01ebfc1",
+    "name": {
+      "first": "Hans",
+      "last": "Zimmer"
+    }
+  },
+
+  {
+    "id": "4219e767-f2f4-4d79-9967-5d89c3b90335",
+    "name": {
+      "first": "Mike",
+      "last": "Tyson"
+    }
+  },
+
+  {
+    "id": "03b303bd-b12e-4c84-83ee-2eac5bcbc863",
+    "name": {
+      "first": "Jeff",
+      "last": "Harris"
+    }
+  },
+
+  {
+    "id": "8fe2389d-1d48-402a-bd7a-fd9a99f4600b",
+    "name": {
+      "first": "Vinnie",
+      "last": "Pacquio"
+    }
+  },
+
+  {
+    "id": "9b6231bc-9fab-4f7a-8200-a186e0fe45d5",
+    "name": {
+      "first": "Floyd",
+      "last": "Mayweather"
+    }
+  },
+
+    {
+    "id": "9f714a72-972a-4394-9a2e-54a8f26b65f6",
+    "name": {
+      "first": "John",
+      "last": "Cena"
+    }
   }
+
 ]

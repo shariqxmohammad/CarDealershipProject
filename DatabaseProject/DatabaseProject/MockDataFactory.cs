@@ -58,24 +58,24 @@ namespace DatabaseProject
 
         public void AddCustomers()
         {
-            var collection = GetCollection<Truck>();
-            var customers = Deserialize<Truck>("customers.json");
+            var collection = GetCollection<Customer>();
+            var customers = Deserialize<Customer>("customers.json");
 
             collection.InsertMany(customers);
         }
 
         public void AddSalesPeople()
         {
-            var collection = GetCollection<Truck>();
-            var salespeople = Deserialize<Truck>("salespeople.json");
+            var collection = GetCollection<Salesperson>();
+            var salespeople = Deserialize<Salesperson>("salespeople.json");
 
             collection.InsertMany(salespeople);
         }
 
         public void AddDealerships()
         {
-            var collection = GetCollection<Truck>();
-            var dealerships = Deserialize<Truck>("branches.json");
+            var collection = GetCollection<Branch>();
+            var dealerships = Deserialize<Branch>("branches.json");
 
             collection.InsertMany(dealerships);
         }

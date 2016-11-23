@@ -1,11 +1,26 @@
 ﻿[
   {
-    "tonnage": "200"
+    "tonnage": "Class 1"
   },
   {
-    "tonnage": "300"
+    "tonnage": "Class 2"
   },
   {
-    "tonnage": "100"
+    "tonnage": "Class 3"
+  },
+    {
+    "tonnage": "Class 4"
+  },
+  {
+    "tonnage": "Class 5"
+  },
+    {
+    "tonnage": "Class 6"
+  },
+  {
+    "tonnage": "Class 7"
+  },
+    {
+    "tonnage": "Class 8"
   }
 ]

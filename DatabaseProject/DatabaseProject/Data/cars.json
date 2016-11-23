@@ -1,11 +1,11 @@
 ﻿[
   {
-    "enginesize": "huge"
+    "enginesize": "4-Cylinder"
   },
   {
-    "enginesize": "small"
+    "enginesize": "6-Cylinder"
   },
   {
-    "enginesize": "large"
+    "enginesize": "8-Cylinder"
   }
 ]
