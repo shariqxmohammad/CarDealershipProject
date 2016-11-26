@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataDisplay.cs" />
     <Compile Include="MockDataFactory.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\DealershipBranch.cs" />

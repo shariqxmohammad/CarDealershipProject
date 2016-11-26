@@ -151,7 +151,7 @@ namespace DatabaseProject
         }
 
         //Complex Query #5 - Subquery - Select all customers that live in Texas from the selected list of all customers who were served by Faith Mandela.
-        public void CustomersInTexasServedByFaith()
+        public IEnumerable<Customer> CustomersInTexasServedByFaith()
         {
             var faithMandelaId = new Guid("eec53a1f-2f33-4908-968c-33c93c351179");
 
@@ -166,7 +166,8 @@ namespace DatabaseProject
                                        select z)
                             where c.Address.State == "TX"
                             select c;
-           
+
+            return customers;
         }
     }
 }
