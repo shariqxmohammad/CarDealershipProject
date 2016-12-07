@@ -14,7 +14,7 @@ namespace DatabaseProject.Models
         public Transmission Transmission { get; set; }
         public string Horsepower { get; set; }
         public string Color { get; set; }
-        public double Price { get; set; }
+        public double Price { get; set; } 
         public string Miles { get; set; }
         public string Model { get; set; }
     }
