@@ -8,3 +8,4 @@ namespace DatabaseProject.Models
         public Name Name { get; set; }
     }
 }
+ 
