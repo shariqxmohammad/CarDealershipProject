@@ -11,7 +11,7 @@ namespace DatabaseProject.Models
     {
         Conventional,
         Sport,
-        Dirt,
+        Dirt, 
         Scooter
     }
 }
