@@ -35,7 +35,7 @@ namespace DatabaseProject
             return result;
         }
 
-        //Simple Query #1 - Select all vehicles from the Vehicles table.
+        //Simple Query #2 - Select all vehicles from the Vehicles table.
         public IEnumerable<Vehicle> GetAllVehicles()
         {
             var collection = GetCollection<Vehicle>();
@@ -48,7 +48,7 @@ namespace DatabaseProject
             return sqlResult;
         }
 
-        //Simple Query #2 - Select the number (count) of vehicles in the Vehicles table.
+        //Simple Query #3 - Select the number (count) of vehicles in the Vehicles table.
         public long GetNumberOfVehicles()
         {
             var collection = GetCollection<Vehicle>();
@@ -56,7 +56,7 @@ namespace DatabaseProject
             return collection.Find(FilterDefinition<Vehicle>.Empty).Count();
         }
 
-        //Simple Query #3 - Show all the tables in the database.
+        //Simple Query #4 - Show all the tables in the database.
         public IEnumerable<string> ShowAllTables()
         {
             var allCollections = new List<string>();
@@ -69,7 +69,7 @@ namespace DatabaseProject
             return allCollections;
         }
 
-        //Simple Query #4 - Query for branches only located in Texas.
+        //Simple Query #5 - Query for branches only located in Texas.
         public IEnumerable<DealershipBranch> GetAllDealershipsInTexas()
         {
             var collection = GetCollection<DealershipBranch>();

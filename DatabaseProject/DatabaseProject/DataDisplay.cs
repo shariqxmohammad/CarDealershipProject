@@ -99,7 +99,7 @@ namespace DatabaseProject
 
             foreach (var c in customers)
             {
-                Console.WriteLine($"Ssn: {c.Ssn} \nName:" + DisplayName(c.Name) + "Address:" + DisplayAddress(c.Address) + $"\nServedBy: {c.ServedBy} \nSalesPerson: " + DisplayName(c.SalesPerson) +"\n");
+                Console.WriteLine($"Ssn: {c.Ssn} \nName:" + DisplayName(c.Name) + "\nAddress:" + DisplayAddress(c.Address) + $"\nServedBy: {c.ServedBy}" + "\n");
             }
         }
 
@@ -126,8 +126,8 @@ namespace DatabaseProject
             var subtitle = "Shariq Mohammad\n";
 
             var intro = "This is the application that I made to add data into and query data from my database."
-                + " I am using MongoDb as my database.This application first deserializes my data from json, then "
-                + "stores it in MongoDb, allowing me to easily change the data that I have stored and query from the database.\n";
+                + " I am using MongoDb as my database. This application first fetches data from MongoDB, then "
+                + "deserializes the data from .JSON files, allowing me to easily manipulate and query data from the database.\n";
 
             Console.ForegroundColor = ConsoleColor.Green;
             CenterTextOutputInConsole(title);
