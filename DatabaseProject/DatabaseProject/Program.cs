@@ -44,7 +44,7 @@ namespace DatabaseProject
                         _display.DisplaySubQuery();
                         break;
                     default:
-                        Console.WriteLine("That's not one of the options...");
+                        Console.WriteLine("That is not one of the options.");
                         break;
                 }
                 _display.DisplayList();
