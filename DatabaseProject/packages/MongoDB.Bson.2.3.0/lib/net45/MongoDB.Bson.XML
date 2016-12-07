@@ -6,7 +6,7 @@
   <members>
     <member name="T:MongoDB.Bson.BsonArray">
       <summary>
-            Represents a BSON array.
+            Represents a BSSON array.
             </summary>
     </member>
     <member name="M:MongoDB.Bson.BsonArray.#ctor">
