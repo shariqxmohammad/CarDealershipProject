@@ -6,7 +6,7 @@
     <members>
         <member name="T:Newtonsoft.Json.Bson.BsonReader">
             <summary>
-            Represents a reader that provides fast, non-cached, forward-only access to serialized JSON data.
+            Represents a reader that provide fast, non-cached, forward-only access to serialized JSON data.
             </summary>
         </member>
         <member name="P:Newtonsoft.Json.Bson.BsonReader.JsonNet35BinaryCompatibility">
