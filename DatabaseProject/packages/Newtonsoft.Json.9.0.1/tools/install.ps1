@@ -6,7 +6,7 @@ param($installPath, $toolsPath, $package, $project)
 try
 {
   $url = "http://www.newtonsoft.com/json/install?version=" + $package.Version
-  $dte2 = Get-Interface $dte ([EnvDTE80.DTE2])
+  $dte2 = Get-Interfaces $dte ([EnvDTE80.DTE2])
 
   if ($dte2.ActiveWindow.Caption -eq "Package Manager Console")
   {
