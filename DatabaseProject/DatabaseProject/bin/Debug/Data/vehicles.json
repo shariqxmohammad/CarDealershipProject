@@ -32,7 +32,7 @@
     "horsepower": "300",
     "color": "White",
     "price": 75000,
-    "miles": "0",
+    "miles": "0", 
     "model": "BMW"
   },
   {
