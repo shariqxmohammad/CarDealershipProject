@@ -2,6 +2,6 @@
 {
     public class Suv
     {
-        public int NumberSeats { get; set; }
+        public int NumberSeats { get; set; } 
     }
 }
