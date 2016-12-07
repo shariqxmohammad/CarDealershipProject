@@ -31,7 +31,7 @@
       <summary>
             Appends a project stage to the pipeline.
             </summary>
-      <param name="newResultSerializer">The new result serializer.</param>
+      <param name="newResultSerializer">The new result serializer.</param> 
       <typeparam name="TNewResult">The type of the new result.</typeparam>
       <returns>The fluent aggregate interface.</returns>
     </member>
