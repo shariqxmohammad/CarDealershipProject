@@ -6,7 +6,7 @@
     <members>
         <member name="T:Newtonsoft.Json.Bson.BsonObjectId">
             <summary>
-            Represents a BSON Oid (object id).
+            Represents the BSON Oid (object id).
             </summary>
         </member>
         <member name="P:Newtonsoft.Json.Bson.BsonObjectId.Value">
