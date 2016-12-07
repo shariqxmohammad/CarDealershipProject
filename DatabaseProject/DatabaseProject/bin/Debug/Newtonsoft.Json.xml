@@ -10,7 +10,7 @@
             </summary>
         </member>
         <member name="P:Newtonsoft.Json.Bson.BsonObjectId.Value">
-            <summary>
+            <summary> 
             Gets or sets the value of the Oid.
             </summary>
             <value>The value of the Oid.</value>
