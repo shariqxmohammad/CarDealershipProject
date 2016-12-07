@@ -4,7 +4,7 @@ using System;
 namespace DatabaseProject.Models
 {
     public class Customer
-    {
+    { 
         [BsonId]
         public string Ssn { get; set; }
 
