@@ -6,7 +6,7 @@
   <members>
     <member name="T:MongoDB.Driver.BatchTransformingAsyncCursor`2">
       <summary>
-            Represents a cursor that wraps another cursor with a transformation function on the documents.
+            Represents a cursor that wrap another cursor with a transformation function on the documents.
             </summary>
       <typeparam name="TFromDocument">The type of from document.</typeparam>
       <typeparam name="TToDocument">The type of to document.</typeparam>
