@@ -6,7 +6,7 @@
     <members>
         <member name="T:Newtonsoft.Json.ConstructorHandling">
             <summary>
-            Specifies how constructors are used when initializing objects during deserialization by the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
+            Specifies how constructor are used when initializing objects during deserialization by the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
             </summary>
         </member>
         <member name="F:Newtonsoft.Json.ConstructorHandling.Default">
