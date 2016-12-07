@@ -6,7 +6,7 @@
     <members>
         <member name="T:MongoDB.Bson.BsonConstants">
             <summary>
-            A static class containing BSON constants.
+            A static class containing BSSON constants.
             </summary>
         </member>
         <member name="P:MongoDB.Bson.BsonConstants.DateTimeMaxValueMillisecondsSinceEpoch">
