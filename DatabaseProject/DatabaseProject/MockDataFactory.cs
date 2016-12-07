@@ -116,7 +116,7 @@ namespace DatabaseProject
             }
             catch (Exception e)
             {
-                Console.WriteLine("Failed to deserialize object of type {0}.", nameof(T));
+                Console.WriteLine("Fail to deserialize object of type {0}.", nameof(T));
             }
 
             return rvalue;
