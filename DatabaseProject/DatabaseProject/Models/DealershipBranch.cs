@@ -6,6 +6,6 @@ namespace DatabaseProject.Models
     {
         public string Phone { get; set; }
         public Address Address { get; set; }
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } 
     }
 }
